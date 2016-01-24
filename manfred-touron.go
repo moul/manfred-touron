@@ -155,5 +155,15 @@ func init() {
 			Handle:   "m42am",
 			URL:      "https://www.youtube.com/user/m42am",
 		},
+		"slideshare": {
+			Provider: "Slideshare",
+			Handle:   "manfredtouron",
+			URL:      "http://www.slideshare.net/manfredtouron",
+		},
+		"linkedin": {
+			Provider: "LinkedIn",
+			Handle:   "manfredtouron",
+			URL:      "https://fr.linkedin.com/in/manfredtouron",
+		},
 	}
 }
