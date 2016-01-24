@@ -150,5 +150,10 @@ func init() {
 			Handle:   "manfred-touron",
 			URL:      "https://soundcloud.com/manfred-touron",
 		},
+		"youtube": {
+			Provider: "Youtube",
+			Handle:   "m42am",
+			URL:      "https://www.youtube.com/user/m42am",
+		},
 	}
 }
