@@ -19,6 +19,7 @@ type Person struct {
 	Nickname      string                  `json:"nickname"`
 	Company       string                  `json:"company"`
 	Homepage      string                  `json:"homepage"`
+	Blog          string                  `json:"blog"`
 	Location      string                  `json:"location"`
 	Headline      string                  `json:"headline"`
 	Emoji         string                  `json:"emoji"`
@@ -32,7 +33,8 @@ var Manfred = Person{
 	Fullname:  "Manfred Touron",
 	Nickname:  "moul",
 	Company:   "Scaleway",
-	Homepage:  "http://m.42.am/",
+	Homepage:  "https://m.42.am/",
+	Blog:      "https://manfredtouron.tumblr.com",
 	Location:  "Rouen, France / Paris, France",
 	Headline:  "For passion, madness and glory",
 	Emoji:     "👌",
@@ -111,6 +113,16 @@ func init() {
 			Provider: "StackOverflow",
 			Handle:   "moul",
 			URL:      "http://stackoverflow.com/users/1271690/moul",
+		},
+		"reddit": {
+			Provider: "Reddit",
+			Handle:   "manfred42",
+			URL:      "https://reddit.com/user/manfred42",
+		},
+		"hackernews": {
+			Provider: "HackerNews",
+			Handle:   "moul",
+			URL:      "https://news.ycombinator.com/user?id=moul",
 		},
 	}
 }
