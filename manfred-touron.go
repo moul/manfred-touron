@@ -165,5 +165,10 @@ func init() {
 			Handle:   "manfredtouron",
 			URL:      "https://fr.linkedin.com/in/manfredtouron",
 		},
+		"dockerhub": {
+			Provider: "Docker",
+			Handle:   "moul",
+			URL:      "https://hub.docker.com/u/moul/",
+		},
 	}
 }
