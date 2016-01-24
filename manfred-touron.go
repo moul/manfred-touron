@@ -1,29 +1,29 @@
 package manfredtouron
 
 type profile struct {
-	Provider string
-	Handle   string
-	URL      string
+	Provider string `json:"provider"`
+	Handle   string `json:"handle"`
+	URL      string `json:"url"`
 }
 
 type organization struct {
-	Name     string
-	URL      string
-	Position string
+	Name     string `json:"name"`
+	URL      string `json:"url"`
+	Position string `json:"position"`
 }
 
 type Person struct {
-	Firstname     string
-	Lastname      string
-	Fullname      string
-	Nickname      string
-	Company       string
-	Homepage      string
-	Location      string
-	Headline      string
-	Emoji         string
-	Organizations map[string]organization
-	Profiles      map[string]profile
+	Firstname     string                  `json:"firstname"`
+	Lastname      string                  `json:"lastname"`
+	Fullname      string                  `json:"fullname"`
+	Nickname      string                  `json:"nickname"`
+	Company       string                  `json:"company"`
+	Homepage      string                  `json:"homepage"`
+	Location      string                  `json:"location"`
+	Headline      string                  `json:"headline"`
+	Emoji         string                  `json:"emoji"`
+	Organizations map[string]organization `json:"organizations"`
+	Profiles      map[string]profile      `json:"profiles"`
 }
 
 var Manfred = Person{
