@@ -107,5 +107,10 @@ func init() {
 			Handle:   "m42am",
 			URL:      "https://www.instagram.com/m42am/",
 		},
+		"stackoverflow": {
+			Provider: "StackOverflow",
+			Handle:   "moul",
+			URL:      "http://stackoverflow.com/users/1271690/moul",
+		},
 	}
 }
