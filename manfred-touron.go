@@ -145,5 +145,10 @@ func init() {
 			Handle:   "moul",
 			URL:      "https://news.ycombinator.com/user?id=moul",
 		},
+		"soundcloud": {
+			Provider: "SoundCloud",
+			Handle:   "manfred-touron",
+			URL:      "https://soundcloud.com/manfred-touron",
+		},
 	}
 }
