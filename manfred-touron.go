@@ -25,6 +25,15 @@ type Person struct {
 	Emoji         string                  `json:"emoji"`
 	Organizations map[string]organization `json:"organizations"`
 	Profiles      map[string]profile      `json:"profiles"`
+	PGP           struct {
+		Fingerprint  string `json:"fingerprint"`
+		F64bit       string `json:"64bit"`
+		F32bit       string `json:"32bit"`
+		KeyAlgorithm string `json:"key-algorithm"`
+		KeyLength    int    `json:"key-length"`
+		Name         string `json:"name"`
+		URL          string `json:"url"`
+	} `json:"pgp"`
 }
 
 var Manfred = Person{
@@ -41,6 +50,16 @@ var Manfred = Person{
 }
 
 func init() {
+	// PGP
+	Manfred.PGP.Fingerprint = "0859942B474A2B3C90D380490DCB9CE0CABAE1B5"
+	Manfred.PGP.F64bit = "0DCB9CE0CABAE1B5"
+	Manfred.PGP.F32bit = "CABAE1B5"
+	Manfred.PGP.KeyAlgorithm = "RSA"
+	Manfred.PGP.KeyLength = 4096
+	Manfred.PGP.Name = "4096R/CABAE1B5"
+	Manfred.PGP.URL = "https://keybase.io/moul/key.asc"
+
+	// Orgs
 	Manfred.Organizations = map[string]organization{
 		"scaleway": {
 			Name:     "Scaleway",
@@ -73,6 +92,8 @@ func init() {
 			Position: "Crew member",
 		},
 	}
+
+	// Social profiles
 	Manfred.Profiles = map[string]profile{
 		"github": {
 			Provider: "GitHub",
