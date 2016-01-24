@@ -170,5 +170,10 @@ func init() {
 			Handle:   "moul",
 			URL:      "https://hub.docker.com/u/moul/",
 		},
+		"meetup": {
+			Provider: "Meetup",
+			Handle:   "96602082",
+			URL:      "http://www.meetup.com/members/96602082/",
+		},
 	}
 }
