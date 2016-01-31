@@ -190,5 +190,10 @@ func init() {
 			Handle:   "manfredtouron",
 			URL:      "https://www.couchsurfing.com/people/manfredtouron",
 		},
+		"openhub": {
+			Provider: "OpenHUB",
+			Handle:   "moul",
+			URL:      "https://www.openhub.net/accounts/moul",
+		},
 	}
 }
