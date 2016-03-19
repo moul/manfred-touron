@@ -230,5 +230,10 @@ func init() {
 			Handle:   "m42am",
 			URL:      "https://fr.wikipedia.org/wiki/Utilisateur:M42am",
 		},
+		"thingiverse": {
+			Provider: "Thingiverse",
+			Handle:   "moul",
+			URL:      "http://www.thingiverse.com/moul/about",
+		},
 	}
 }
