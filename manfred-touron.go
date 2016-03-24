@@ -91,6 +91,11 @@ func init() {
 			URL:      "http://soundcloud.com/camembert-au-lait-crew",
 			Position: "Crew member",
 		},
+		"anjunabeats": {
+			Name:     "Anjunabeats",
+			URL:      "http://www.anjunabeats.com",
+			Position: "IT staff",
+		},
 	}
 
 	// Social profiles
