@@ -96,6 +96,11 @@ func init() {
 			URL:      "http://www.anjunabeats.com",
 			Position: "IT staff",
 		},
+		"42am": {
+			Name:     "42.am",
+			URL:      "http://www.42.am",
+			Position: "Co-founder",
+		},
 	}
 
 	// Social profiles
