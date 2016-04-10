@@ -34,6 +34,7 @@ type Person struct {
 		Name         string `json:"name"`
 		URL          string `json:"url"`
 	} `json:"pgp"`
+	SSHPubKey     string                  `json:"ssh-pub-key"`
 }
 
 var Manfred = Person{
@@ -47,6 +48,7 @@ var Manfred = Person{
 	Location:  "Rouen, France / Paris, France",
 	Headline:  "For passion, madness and glory",
 	Emoji:     "👌",
+	SSHPubKey: "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEApvPvDbWDY50Lsx4WyUInw407379iERte63OTTNae6+JgAeYsn52Z43Oeks/2qC0gxweq+sRY9ccqhfReie+r+mvl756T4G8lxX1ND8m6lZ9kM30Rvk0piZn3scF45spmLNzCNXza/Hagxy53P82ej2vq2ewXtjVdvW20G3cMHVLkcdgKJN+2s+UkSYlASW6enUj3no+bukT+6M8lJtlT0/0mZtnBRJtqCCvF0cm9xU0uxILrhIfdYAJ1XqaoqIQLFSDLVo5lILMzDNwV+CfAotRMWIKvWomCszhVQYHCQo2Z+b2Gs0TL4DRb23fRMdeaRufnVhh5ZMlNkb2ajaL6sw== m",
 }
 
 func init() {
