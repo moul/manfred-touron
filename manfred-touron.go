@@ -34,7 +34,7 @@ type Person struct {
 		Name         string `json:"name"`
 		URL          string `json:"url"`
 	} `json:"pgp"`
-	SSHPubKey     string                  `json:"ssh-pub-key"`
+	SSHPubKey string `json:"ssh-pub-key"`
 }
 
 var Manfred = Person{
@@ -246,6 +246,11 @@ func init() {
 			Provider: "Thingiverse",
 			Handle:   "moul",
 			URL:      "http://www.thingiverse.com/moul/about",
+		},
+		"lemarathondelasemaine": {
+			Provider: "Le marathon de la semaine",
+			Handle:   "moul",
+			URL:      "http://www.lemarathondelasemaine.fr/joggeur/view/33",
 		},
 	}
 }
