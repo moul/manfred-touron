@@ -252,5 +252,10 @@ func init() {
 			Handle:   "moul",
 			URL:      "http://www.lemarathondelasemaine.fr/joggeur/view/33",
 		},
+		"openagenda": {
+			Provider: "OpenAgenda",
+			Handle:   "manfred",
+			URL:      "https://openagenda.com/manfred",
+		},
 	}
 }
