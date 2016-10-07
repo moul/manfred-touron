@@ -257,5 +257,10 @@ func init() {
 			Handle:   "manfred",
 			URL:      "https://openagenda.com/manfred",
 		},
+                "robozzle": {
+                        Provider: "RoboZZle",
+                        Handle: "moul",
+                        URL: "http://robozzle.com/user.aspx?name=moul",
+                },
 	}
 }
