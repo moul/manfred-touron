@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/moul/manfred-touron.svg?branch=master)](https://travis-ci.org/moul/manfred-touron)
 [![GoDoc](https://godoc.org/github.com/moul/manfred-touron?status.svg)](https://godoc.org/github.com/moul/manfred-touron)
-[![Coverage Status](https://coveralls.io/repos/github/moul/manfred-touron/badge.svg?branch=master)](https://coveralls.io/github/moul/manfred-touron?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/moul/manfred-touron/badge.svg?branch=master)](https://coveralls.io/github/moul/manfred-touron?branch=master) [![GuardRails badge](https://badges.production.guardrails.io/moul/manfred-touron.svg)](https://www.guardrails.io)
 
 ![](https://avatars1.githubusercontent.com/u/94029?v=3&s=460)
 
