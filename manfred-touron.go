@@ -42,11 +42,11 @@ var Manfred = Person{
 	Lastname:  "Touron",
 	Fullname:  "Manfred Touron",
 	Nickname:  "moul",
-	Company:   "Scaleway",
-	Homepage:  "https://m.42.am/",
-	Blog:      "http://blog.m.42.am/",
-	Location:  "Rouen, France / Paris, France",
-	Headline:  "For passion, madness and glory",
+	Company:   "Berty",
+	Homepage:  "https://manfredtouron.com/",
+	Blog:      "https://manfredtouron.com/blog",
+	Location:  "Paris, France",
+	Headline:  "Passion & Madness",
 	Emoji:     "👌",
 	SSHPubKey: "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEApvPvDbWDY50Lsx4WyUInw407379iERte63OTTNae6+JgAeYsn52Z43Oeks/2qC0gxweq+sRY9ccqhfReie+r+mvl756T4G8lxX1ND8m6lZ9kM30Rvk0piZn3scF45spmLNzCNXza/Hagxy53P82ej2vq2ewXtjVdvW20G3cMHVLkcdgKJN+2s+UkSYlASW6enUj3no+bukT+6M8lJtlT0/0mZtnBRJtqCCvF0cm9xU0uxILrhIfdYAJ1XqaoqIQLFSDLVo5lILMzDNwV+CfAotRMWIKvWomCszhVQYHCQo2Z+b2Gs0TL4DRb23fRMdeaRufnVhh5ZMlNkb2ajaL6sw== m",
 }
@@ -59,10 +59,25 @@ func init() {
 	Manfred.PGP.KeyAlgorithm = "RSA"
 	Manfred.PGP.KeyLength = 4096
 	Manfred.PGP.Name = "4096R/AB123456"
-	Manfred.PGP.URL = "https://m.42.am/moul.asc"
+	Manfred.PGP.URL = "https://manfredtouron.com/manfred.asc"
 
 	// Orgs
 	Manfred.Organizations = map[string]organization{
+		"bertytech": {
+			Name:     "Berty Technologies",
+			URL:      "https://berty.tech",
+			Position: "Founder",
+		},
+		"united-drivers": {
+			Name:     "United Drivers",
+			URL:      "https://www.united-drivers.org",
+			Position: "Founder",
+		},
+		"ultreme": {
+			Name:     "Ultreme",
+			URL:      "https://ultre.me",
+			Position: "Co-founder",
+		},
 		"scaleway": {
 			Name:     "Scaleway",
 			URL:      "https://www.scaleway.com/",
@@ -71,7 +86,7 @@ func init() {
 		"pathwar": {
 			Name:     "Pathwar",
 			URL:      "https://www.pathwar.net/",
-			Position: "Co-founder",
+			Position: "Founder",
 		},
 		"while42": {
 			Name:     "while42",
@@ -116,6 +131,11 @@ func init() {
 			Provider: "Gravatar",
 			Handle:   "da14d5cef42c8142d3d40286f28f29bd",
 			URL:      "https://www.gravatar.com/avatar/da14d5cef42c8142d3d40286f28f29bd?s=800",
+		},
+		"angellist": {
+			Provider: "AngelList",
+			Handle:   "moul",
+			URL:      "https://angel.co/moul",
 		},
 		"twitter": {
 			Provider: "Twitter",
@@ -242,6 +262,11 @@ func init() {
 			Handle:   "m42am",
 			URL:      "https://fr.wikipedia.org/wiki/Utilisateur:M42am",
 		},
+		"kickstarter": {
+			Provider: "Kickstarter",
+			Handle:   "moul",
+			URL:      "https://www.kickstarter.com/profile/moul",
+		},
 		"thingiverse": {
 			Provider: "Thingiverse",
 			Handle:   "moul",
@@ -257,10 +282,16 @@ func init() {
 			Handle:   "manfred",
 			URL:      "https://openagenda.com/manfred",
 		},
-                "robozzle": {
-                        Provider: "RoboZZle",
-                        Handle: "moul",
-                        URL: "http://robozzle.com/user.aspx?name=moul",
-                },
+		"robozzle": {
+			Provider: "RoboZZle",
+			Handle:   "moul",
+			URL:      "http://robozzle.com/user.aspx?name=moul",
+		},
+		"medium": {
+			Provider: "Medium",
+			Handle:   "moul",
+			URL:      "https://medium.com/@moul",
+		},
+		// Spotify
 	}
 }
