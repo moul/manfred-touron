@@ -43,12 +43,12 @@ var Manfred = Person{
 	Fullname:  "Manfred Touron",
 	Nickname:  "moul",
 	Company:   "Berty",
-	Homepage:  "https://manfredtouron.com/",
-	Blog:      "https://manfredtouron.com/blog",
+	Homepage:  "https://manfred.life/",
+	Blog:      "https://manfred.life/blog",
 	Location:  "Paris, France",
 	Headline:  "Passion & Madness",
 	Emoji:     "👌",
-	SSHPubKey: "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEApvPvDbWDY50Lsx4WyUInw407379iERte63OTTNae6+JgAeYsn52Z43Oeks/2qC0gxweq+sRY9ccqhfReie+r+mvl756T4G8lxX1ND8m6lZ9kM30Rvk0piZn3scF45spmLNzCNXza/Hagxy53P82ej2vq2ewXtjVdvW20G3cMHVLkcdgKJN+2s+UkSYlASW6enUj3no+bukT+6M8lJtlT0/0mZtnBRJtqCCvF0cm9xU0uxILrhIfdYAJ1XqaoqIQLFSDLVo5lILMzDNwV+CfAotRMWIKvWomCszhVQYHCQo2Z+b2Gs0TL4DRb23fRMdeaRufnVhh5ZMlNkb2ajaL6sw== m",
+	SSHPubKey: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILvCixRQQQDi378rpFnvcguAjjKzAJDGO73cnN5B/u42",
 }
 
 func init() {
@@ -59,7 +59,7 @@ func init() {
 	Manfred.PGP.KeyAlgorithm = "RSA"
 	Manfred.PGP.KeyLength = 4096
 	Manfred.PGP.Name = "4096R/AB123456"
-	Manfred.PGP.URL = "https://manfredtouron.com/manfred.asc"
+	Manfred.PGP.URL = "https://manfred.life/manfred.asc"
 
 	// Orgs
 	Manfred.Organizations = map[string]organization{
@@ -67,6 +67,11 @@ func init() {
 			Name:     "Berty Technologies",
 			URL:      "https://berty.tech",
 			Position: "Founder",
+		},
+		"parisp2p": {
+			Name:     "Paris P2P",
+			URL:      "https://p2p.paris",
+			Position: "Organizer",
 		},
 		"united-drivers": {
 			Name:     "United Drivers",
